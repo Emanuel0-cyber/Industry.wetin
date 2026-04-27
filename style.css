@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f8f9fa;
+    color: #222;
+    line-height: 1.6;
+}
+
+nav {
+    background: #0d6efd;
+    color: white;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav .links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 5%;
+    background: white;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #0d6efd;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.trending, .page-header, .industry-list, .content {
+    padding: 2rem 5%;
+}
+
+.cards {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.card a {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.industry-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.industry-item {
+    background: white;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: #222;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 5%;
+    background: #222;
+    color: white;
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .cards, .industry-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
